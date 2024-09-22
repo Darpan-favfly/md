@@ -1,16 +1,19 @@
 ---
-
+import HeavyComponent from "../components/HeavyComponent";
+import Layout from "../layout/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <h1>Welcome to Astro</h1>
+  <p>
+    Astro is a new kind of static site builder that delivers lightning-fast
+    performance with a modern developer experience.
+  </p>
+  <p>
+    <a href="https://docs.astro.build" target="_blank">Read the documentation</a
+    >
+  </p>
+  <div style="margin-top: 2000px;">
+    <HeavyComponent />
+  </div>
+</Layout>
